@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Платформа для управління цілями</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Логотип" class="logo">
+        </div>
+        <button class="burger-menu">&#9776;</button> 
+      <ul>
+        <li><a href="#goals">Мої цілі</a></li>
+        <li><a href="#progress">Прогрес</a></li>
+        <li><a href="#community">Спільнота</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="goals">
+      <div class="goal-cards">
+
+        <article class="goal-card">
+            <img src="img/goal1.jpg" alt="Ціль 1">
+            <h3>Піти в спортзал</h3>
+            <button class="mark-done">Виконати ціль</button>
+            <button class="delete-goal">✖</button>
+          </article>
+  
+          <article class="goal-card">
+            <img src="img/goal2.webp" alt="Ціль 2">
+            <h3>Купити новий телефон</h3>
+            <button class="mark-done">Виконати ціль</button>
+            <button class="delete-goal">✖</button>
+          </article>
+  
+          <article class="goal-card">
+              <img src="img/goal3.jpg" alt="Ціль 2">
+              <h3>Поїхати в Італію</h3>
+              <button class="mark-done">Виконати ціль</button>
+              <button class="delete-goal">✖</button>
+          </article>
+  
+          <article class="goal-card">
+              <img src="img/goal4.jpg" alt="Ціль 2">
+              <h3>Прочитати три книги</h3>
+              <button class="mark-done">Виконати ціль</button>
+              <button class="delete-goal">✖</button>
+          </article>
+  
+          <article class="goal-card">
+            <img src="img/goal5.jpg" alt="Ціль 3">
+            <h3>Навчитися грати на гітарі</h3>
+            <button class="mark-done">Виконати ціль</button>
+            <button class="delete-goal">✖</button>
+          </article>
+  
+          <article class="goal-card">
+              <img src="img/goal6.jpg" alt="Ціль 3">
+              <h3>Купити навушники</h3>
+              <button class="mark-done">Виконати ціль</button>
+              <button class="delete-goal">✖</button>
+          </article>
+  
+          <article class="goal-card">
+              <img src="img/goal7.png" alt="Ціль 3">
+              <h3>Здати IELTS</h3>
+              <button class="mark-done">Виконати ціль</button>
+              <button class="delete-goal">✖</button>
+          </article>
+  
+          <article class="goal-card">
+              <img src="img/goal8.jpg" alt="Ціль 3">
+              <h3>Купити сережки</h3>
+              <button class="mark-done">Виконати ціль</button>
+              <button class="delete-goal">✖</button>
+          </article>
+  
+          <article class="goal-card">
+              <img src="img/goal9.webp" alt="Ціль 3">
+              <h3>Купити духи</h3>
+              <button class="mark-done">Виконати ціль</button>
+              <button class="delete-goal">✖</button>
+          </article>
+
+          <article class="goal-card">
+            <img src="img/goal10.webp" alt="Ціль 3">
+            <h3>Освоїти html і css</h3>
+            <button class="mark-done">Виконати ціль</button>
+            <button class="delete-goal">✖</button>
+        </article>
+
+        <article class="goal-card">
+            <img src="img/goal11.webp" alt="Ціль 3">
+            <h3>Купити Porsche</h3>
+            <button class="mark-done">Виконати ціль</button>
+            <button class="delete-goal">✖</button>
+        </article>
+
+        <article class="goal-card">
+            <img src="img/goal12.jpeg" alt="Ціль 3">
+            <h3>Купити Dyson</h3>
+            <button class="mark-done">Виконати ціль</button>
+            <button class="delete-goal">✖</button>
+        </article>
+
+        <article class="goal-card add-goal">
+          <div class="plus-sign">+</div>
+          <h3>Додати ціль</h3>
+        </article>
+      </div>
+    </section>
+
+    <section id="progress">
+      <h2>Прогрес</h2>
+      <div class="progress-container">
+        <div class="progress-bar"></div>
+      </div>
+      <p class="progress-text">Прогрес: 0%</p>
+    </section>
+
+    <section id="community">
+        <h2>Спільнота</h2>
+        <input type="text" id="comment-input" placeholder="">
+        <button id="comment-button">Опублікувати</button>
+        <ul id="comment-list">
+          <li>"Маленькі кроки ведуть до великих результатів!" – Олександр</li>
+          <li>"Рекомендую книгу 'Атомні звички' – дуже мотивує!" – Марина</li>
+          <li>"Головне – ставити реальні цілі і нагороджувати себе!" – Іван</li>
+          <li>"Неймовірний сайт! Заслуговує найвищого балу" – Тоня</li>
+        </ul>
+      </section>
+      
+      
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ttonkks production</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,398 @@
+/* Загальні стилі */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #c6c4c4;
+    color: #292d4d;
+}
+
+/* Шапка */
+header {
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Навігація */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Логотип */
+.logo {
+    max-height: 40px;
+    width: auto;
+    transition: 0.3s;
+}
+
+/* Меню */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 45px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #292d4d;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 0;
+    transition: 0.3s;
+}
+
+/* Ефект підкреслення */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: #4CAF50;
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Цілі */
+.goal-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+    padding: 30px;
+}
+
+
+/* Карточки цілей */
+.goal-card {
+    position: relative; 
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+.goal-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.goal-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* Кнопка "Виконати ціль" */
+.mark-done {
+    display: block;
+    width: 80%;
+    padding: 12px;
+    background: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s, transform 0.2s;
+    margin: 10px auto;
+}
+
+.mark-done:hover {
+    background: #45a049;
+    transform: scale(1.02);
+}
+
+/* Виконані цілі */
+.goal-card.completed {
+    background: #e0e0e0;
+    opacity: 0.7;
+}
+
+.goal-card.completed .mark-done {
+    background: #777;
+    cursor: default;
+}
+
+/* Кнопка "Видалити" */
+.delete-goal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: rgb(185, 6, 6);
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, color 0.2s;
+}
+
+.delete-goal:hover {
+    color: darkred;
+    transform: scale(1.2);
+}
+
+/* Додати нову ціль */
+.add-goal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+    background: #e0e0e0;
+    transition: 0.3s;
+    border-radius: 15px;
+    padding: 50px;
+}
+
+.add-goal:hover {
+    background: #d4d4d4;
+}
+
+
+
+/* Прогрес */
+#progress {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 85%;
+    margin: 40px auto;
+    padding: 78px;
+    text-align: center;
+}
+
+.progress-container {
+    width: 95%;
+    background: #f1f1f1;
+    border-radius: 30px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+    height: 30px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #4CAF50;
+    border-radius: 30px;
+    transition: width 0.5s ease-in-out;
+}
+
+.progress-text {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
+    color: #292d4d;
+}
+
+
+/* "Спільнота" */
+#community {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 85%;
+    margin: 40px auto;
+    padding: 78px;
+    text-align: center;
+}
+
+/* Заголовок */
+#community h2 {
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* Поле введення */
+.comment-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#comment-input {
+    width: 70%;
+    padding: 14px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    font-size: 18px;
+    transition: 0.3s;
+    outline: none;
+    background: #f9f9f9;
+}
+
+#comment-input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Кнопка "Опублікувати" */
+#comment-button {
+    padding: 14px 24px;
+    background: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#comment-button:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+
+/* Коментар */
+.comments {
+    max-height: 250px;
+    overflow-y: auto;
+    background: #f7f7f7;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Коментар */
+#comment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#comment-list li {
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: 0.3s;
+}
+
+
+
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+    color: #292d4d;
+    font-size: 16px;
+}
+
+.burger-menu {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    /* Меню стає вертикальним */
+     .burger-menu {
+        display: block;
+        font-size: 28px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    /* Ховаємо стандартне меню */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        border-radius: 10px;
+        width: 200px;
+    }
+
+    /* Показуємо меню, коли воно активне */
+    nav ul.show {
+        display: flex;
+    }
+
+    /* Картки в одну колонку */
+    .goal-cards {
+        grid-template-columns: 1fr; 
+        gap: 25px;
+    }
+
+    .goal-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .goal-card.add-goal {
+        width: 72%; 
+        margin: 0 auto;
+    }
+
+    /* Прогрес-бар займає всю ширину */
+
+    #progress {
+        padding: 40px;
+        width: 85%;
+    } 
+
+    /* Зменшений шрифт */
+    h2 {
+        font-size: 22px;
+    }
+
+    #community {
+        padding: 40px;
+        width: 85%;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
