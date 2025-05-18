@@ -1,0 +1,36 @@
+/* Прогрес */
+#progress {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 96%; 
+    margin: 15px auto;
+    padding: 40px 20px; 
+    text-align: center;
+}
+
+.progress-container {
+    padding-top: 20px;
+    width: 100%; 
+    background: #f1f1f1;
+    border-radius: 30px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+    height: 30px; 
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #4CAF50;
+    border-radius: 30px;
+    transition: width 0.5s ease-in-out;
+}
+
+.progress-text {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
+    color: #292d4d;
+}

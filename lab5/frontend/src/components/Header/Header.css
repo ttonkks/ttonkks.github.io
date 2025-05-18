@@ -1,0 +1,126 @@
+/* Шапка */
+header {
+  background: white;
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Навігація */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Логотип */
+.logo {
+  max-height: 40px;
+  width: auto;
+  transition: 0.3s;
+}
+
+/* Меню */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #292d4d;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px 0;
+  transition: 0.3s;
+}
+
+/* Ефект підкреслення */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: #4CAF50;
+  transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul li a:hover {
+  color: #4CAF50;
+}
+
+header .burger-menu {
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.auth-buttons {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.auth-button {
+  padding: 6px 12px;
+  text-decoration: none;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.auth-button:hover {
+  background-color: #ddd;
+}
+
+/* Кнопка для реєстрації */
+.auth-button.register {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.auth-button.register:hover {
+  background-color: #45a049;
+}
+
+/* Кнопка для вийти */
+.auth-button.logout {
+  padding: 6px 12px;
+  text-decoration: none;
+  background-color: #4CAF50; 
+  border-radius: 4px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  outline: none; 
+  border: none;  
+  cursor: pointer;
+}
+
+.auth-button.logout:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,180 @@
+
+/* Цілі */
+.goal-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 30px;
+}
+
+/* Карточки цілей */
+.goal-card {
+  position: relative; 
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* Ефект при наведенні на картку */
+.goal-card:hover {
+  transform: translateY(-5px); /* Легке підняття картки */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Посилена тінь при наведенні */
+  cursor: pointer; /* Курсор вказує на клікабельність */
+}
+
+/* Інші стилі залишаються без змін */
+
+
+.add-goal {
+  order: 9999; 
+  width: 155px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.add-goal h3 {
+  font-size: 16px;
+}
+
+/* Стилі для картинки в карточках */
+.goal-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Заголовок картки */
+.goal-card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Кнопка "Виконати ціль" */
+.mark-done {
+  display: block;
+  width: 80%;
+  padding: 12px;
+  background: #4CAF50;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s, transform 0.2s;
+  margin: 10px auto;
+}
+
+.mark-done:hover {
+  background: #45a049;
+  transform: scale(1.02);
+}
+
+/* Виконані цілі */
+.goal-card.completed {
+  background: #e0e0e0;
+  opacity: 0.7;
+}
+
+.goal-card.completed .mark-done {
+  background: #777;
+  cursor: default;
+}
+
+/* Кнопка "Видалити" */
+.delete-goal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: rgb(185, 6, 6);
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, color 0.2s;
+}
+
+.delete-goal:hover {
+  color: darkred;
+  transform: scale(1.2);
+}
+
+/* Кнопка додавання цілі */
+.add-goal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+  background: #e0e0e0;
+  transition: 0.3s;
+  border-radius: 15px;
+  padding: 50px;
+  width: 360px; /* Фіксована ширина кнопки */
+  max-width: 100%; /* Максимальна ширина не більше ніж 90% від ширини екрану */
+}
+
+.add-goal:hover {
+  background: #d4d4d4;
+}
+
+/* Контейнер фільтра */
+.filter-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0px;
+  width: 100%;
+  padding-right: 27px;
+  margin-top: 100px;
+}
+
+/* Стилі для select */
+.filter-container select {
+  padding: 8px 12px; /* Зменшено внутрішні відступи */
+  font-size: 14px; /* Трохи менший шрифт */
+  font-weight: 500;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  background: white;
+  color: #292d4d;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  width: 120px; /* Задано фіксовану ширину */
+}
+
+/* Ефект при фокусі */
+.filter-container select:focus {
+  border-color: #2E7D32;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+}
+
+/* Адаптивний дизайн */
+@media (max-width: 768px) {
+  .goal-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .filter-container {
+    margin-top: 60px;
+    padding-right: 15px;
+  }
+
+  .add-goal {
+    width: 100%; /* Зміна для мобільних пристроїв */
+    padding: 30px;
+    font-size: 20px;
+  }
+}
+
+

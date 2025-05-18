@@ -1,0 +1,15 @@
+[
+    { "id": 1, "imgSrc": "/img/goal1.jpg", "title": "Піти в спортзал", "completed": false },
+    { "id": 2, "imgSrc": "/img/goal2.webp", "title": "Купити новий телефон", "completed": false },
+    { "id": 3, "imgSrc": "/img/goal3.jpg", "title": "Поїхати в Італію", "completed": false },
+    { "id": 4, "imgSrc": "/img/goal4.jpg", "title": "Прочитати три книги", "completed": false },
+    { "id": 5, "imgSrc": "/img/goal5.jpg", "title": "Навчитися грати на гітарі", "completed": false },
+    { "id": 6, "imgSrc": "/img/goal6.jpg", "title": "Купити навушники", "completed": false },
+    { "id": 7, "imgSrc": "/img/goal7.png", "title": "Здати IELTS", "completed": false },
+    { "id": 8, "imgSrc": "/img/goal8.jpg", "title": "Купити сережки", "completed": false },
+    { "id": 9, "imgSrc": "/img/goal9.webp", "title": "Купити духи", "completed": false },
+    { "id": 10, "imgSrc": "/img/goal10.webp", "title": "Освоїти HTML і CSS", "completed": false },
+    { "id": 11, "imgSrc": "/img/goal11.webp", "title": "Купити Porsche", "completed": false },
+    { "id": 12, "imgSrc": "/img/goal12.jpeg", "title": "Купити Dyson", "completed": false }
+  ]
+  
